@@ -1,0 +1,99 @@
+body
+{
+    margin:0;
+    padding: 0;
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://th.bing.com/th/id/R.b3fb77d9021cab419d326fdfe79b23a6?rik=8kmeesCTSWgjAQ&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5744d37b29eb2cc479c98cda%2fmaster%2fpass%2fcontemporary-interior-design-001.jpg&ehk=dR%2fpFWYK6jBNpKAy3OcGJH1vinx%2fSy56htizmWRMY%2bI%3d&risl=&pid=ImgRaw&r=0);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    width:85%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+.logo{
+    width: 120px;
+    height: 80px;
+    cursor: pointer;   
+}
+.navbar ul li::after{
+    content:'' ;
+    height:3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-60%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+content p{
+    margin:5px ;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor:pointer;
+    overflow: hidden;
+    position: relative;
+}
+span{
+
+    border-radius: 25px;
+    height:100%;
+    width:0;
+    background: #009688;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: 0.7s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+border: none;
+}
